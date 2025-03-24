@@ -9,7 +9,7 @@
     "url": "https://github.com/redholms/node-template-package.git"
   },
   "keywords": [
-    "cui"
+    "template"
   ],
   "main": "dist/index.js",
   "types": "./types/index.d.ts",
