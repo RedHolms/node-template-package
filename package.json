@@ -1,0 +1,35 @@
+{
+  "name": "TEMPLATE",
+  "author": "RedHolms",
+  "description": "Just a template",
+  "license": "Free to use, edit and distribute",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/redholms/node-template-package.git"
+  },
+  "keywords": [
+    "cui"
+  ],
+  "main": "dist/index.js",
+  "types": "./types/index.d.ts",
+  "typings": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": {
+        "default": "./types/index.d.ts"
+      },
+      "default": {
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsx ./scripts/build.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "types"
+  ]
+}
