@@ -24,15 +24,16 @@
       }
     }
   },
+  "scripts": {
+    "build": "tsx ./scripts/build.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^22.13.13",
     "esbuild": "^0.25.1",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2"
-  },
-  "scripts": {
-    "build": "tsx ./scripts/build.ts",
-    "prepublishOnly": "npm run build"
   },
   "files": [
     "dist",
